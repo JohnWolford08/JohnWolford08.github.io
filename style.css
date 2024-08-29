@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b254d52a-2b45-413c-a95e-1c940d71011b/dfwd7dl-3e2d9925-6b56-42fc-90c1-07e6bce318e0.png/v1/fill/w_1280,h_720,q_80,strp/basic_red_wallpaper_by_basicwallpaperman_dfwd7dl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IyNTRkNTJhLTJiNDUtNDEzYy1hOTVlLTFjOTQwZDcxMDExYlwvZGZ3ZDdkbC0zZTJkOTkyNS02YjU2LTQyZmMtOTBjMS0wN2U2YmNlMzE4ZTAucG5nIiwiaGVpZ2h0IjoiPD03MjAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9iMjU0ZDUyYS0yYjQ1LTQxM2MtYTk1ZS0xYzk0MGQ3MTAxMWJcL2Jhc2ljd2FsbHBhcGVybWFuLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.UABhpCHfaH7NKcOfw6ykD-_-kPUYPC19NXLsahA-WKg')
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b254d52a-2b45-413c-a95e-1c940d71011b/dfwd7dl-3e2d9925-6b56-42fc-90c1-07e6bce318e0.png/v1/fill/w_1280,h_720,q_80,strp/basic_red_wallpaper_by_basicwallpaperman_dfwd7dl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IyNTRkNTJhLTJiNDUtNDEzYy1hOTVlLTFjOTQwZDcxMDExYlwvZGZ3ZDdkbC0zZTJkOTkyNS02YjU2LTQyZmMtOTBjMS0wN2U2YmNlMzE4ZTAucG5nIiwiaGVpZ2h0IjoiPD03MjAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9iMjU0ZDUyYS0yYjQ1LTQxM2MtYTk1ZS0xYzk0MGQ3MTAxMWJcL2Jhc2ljd2FsbHBhcGVybWFuLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.UABhpCHfaH7NKcOfw6ykD-_-kPUYPC19NXLsahA-WKg');
     color: rgb(0, 0, 0);
     padding: 10px;
     font-family: arial;
@@ -19,7 +19,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: rgb(255, 251, 0);
+    color: rgb(250, 242, 242);
     flex: 1;
     margin: 0;
 }
@@ -37,7 +37,7 @@ a {
 
 /* main container area beneath menu */
 main {
-    background: rgb(228, 225, 225);
+    background: rgb(117, 6, 6);
     display: flex;
 }
 .sidebar {
