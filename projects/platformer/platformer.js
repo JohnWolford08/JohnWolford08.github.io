@@ -57,6 +57,7 @@ $(function () {
     createCollectable('diamond', 330, 100, 1, 1)
     createCollectable('steve', 730, 1, 1, 1)
     createCollectable('kennedi', 1000, 1, 1, 1)
+    createCollectable('grace', 730, 400, 1, 1)
 
 
     
