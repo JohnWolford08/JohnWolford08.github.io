@@ -1,0 +1,70 @@
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let carX = canvas.width / 2;
+let carY = canvas.height / 2;
+let carSpeed = 5;
+let carAngle = 0;
+
+function drawRoad() {
+    ctx.fillStyle = '#555';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.moveTo(0, canvas.height / 2);
+    ctx.lineTo(canvas.width, canvas.height / 2);
+    ctx.stroke();
+}
+
+function drawCar() {
+    ctx.save();
+    ctx.translate(carX, carY);
+    ctx.rotate(carAngle);
+    ctx.fillStyle = '#f00';
+    ctx.fillRect(-20, -10, 40, 20);
+    ctx.restore();
+}
+
+function update() {
+    if (keys['ArrowUp']) {
+        carX += carSpeed * Math.cos(carAngle);
+        carY += carSpeed * Math.sin(carAngle);
+    }
+    if (keys['ArrowDown']) {
+        carX -= carSpeed * Math.cos(carAngle);
+        carY -= carSpeed * Math.sin(carAngle);
+    }
+    if (keys['ArrowLeft']) {
+        carAngle -= 0.1;
+    }
+    if (keys['ArrowRight']) {
+        carAngle += 0.1;
+    }
+
+    // Simple boundary checking
+    carX = Math.max(20, Math.min(canvas.width - 20, carX));
+    carY = Math.max(20, Math.min(canvas.height - 20, carY));
+}
+
+const keys = {};
+
+window.addEventListener('keydown', (e) => {
+    keys[e.key] = true;
+});
+
+window.addEventListener('keyup', (e) => {
+    keys[e.key] = false;
+});
+
+function gameLoop() {
+    drawRoad();
+    update();
+    drawCar();
+    requestAnimationFrame(gameLoop);
+}
+
+gameLoop();
