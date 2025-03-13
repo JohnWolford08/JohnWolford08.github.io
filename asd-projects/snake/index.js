@@ -284,11 +284,11 @@ function makeSnakeSquare(row, column) {
 */
 function handleKeyDown(event) {
   // TODO 6a: make the handleKeyDown function register which key is pressed
-  function handleKeyDown(event) {
+  
     activeKey = event.which;
     console.log(activeKey);
   }  
-}
+
 
 /* Given a gameSquare (which may be a snakeSquare or the apple), position
  * the gameSquare on the screen.
