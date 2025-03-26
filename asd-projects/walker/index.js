@@ -35,25 +35,53 @@ var walker = {
   On each "tick" of the timer, a new frame is dynamically drawn using JavaScript
   by calling this function and executing the code inside.
   */
-  function newFrame() {}
+  function newFrame() {
+    repositionGameItem()
+    redrawGameItem()
+  }
 
   /* 
   Called in response to events.
   */
   function handleKeyDown(event) {
     if (event.which === KEY.LEFT) {
-      console.log("left pressed");
-      console.log(event.key);
+   walker.Xspeed = -5   
     }
+    if (event.which === KEY.UP) {
+   walker.Yspeed = -5   
+    }
+    if (event.which === KEY.RIGHT) {
+   walker.Xspeed = 5   
+    }
+    if (event.which === KEY.DOWN) {
+    walker.Yspeed = 5  
+    }
+
+
+
+
+
   }
+
+
+
+
+
+
 
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////////
 
-function repositionGameItem() {}
+function repositionGameItem() {
+walker.X = walker.X + walker.Xspeed
+walker.Y = walker.Y + walker.Yspeed
+}
 
-function redrawGameItem() {}
+function redrawGameItem() {
+$("#walker").css("left", walker.X);
+$("#walker").css("top", walker.Y);
+}
 
 
   function endGame() {
